@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191014200959_InitialCreation.cs" />
+    <Compile Remove="Migrations\20191014202112_FixingBugs.cs" />
+    <Compile Remove="Migrations\20191014202146_InitialCreation.cs" />
+    <Compile Remove="Migrations\20191014202436_InitialCreation.cs" />
+    <Compile Remove="Migrations\20191014203000_InitialCreation.cs" />
+    <Compile Remove="Migrations\20191014203222_BugFixes.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
